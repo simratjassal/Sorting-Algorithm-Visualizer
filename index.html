@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="array-inputs">
+                <p style="font-size: 15px;">Size of the array:</p>
+                <input id="a_size" type="range" min=20 max=150 step=1 value=80>
+                <p style="font-size: 15px;">Speed of the algorithm:</p>
+                <input id="a_speed" type="range" min=1 max=5 step=1 value=4>
+                <button id="a_generate" style="font-size: 15px;">Generate New Array!</button>
+            </div>
+
+            <div class="header_right">
+                <p class="nav-heading">Sorting visualizer</p>
+
+                <div class="algos" >
+                    <button style="font-size: 15px;" >Bubble</button>
+                    <button style="font-size: 15px;" >Selection</button>
+                    <button style="font-size: 15px;" >Insertion</button>
+                    <button style="font-size: 15px;" >Merge</button>
+                    <button style="font-size: 15px;" >Quick</button>
+                    <!-- <button style="margin-right: 0px;">Heap</button> -->
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <section>
+
+        <div id="Info_Cont1">
+            <p style="font-size: 15px ;">Made By:</p>
+            <p>Simratjot Singh</p>
+            <p>----------------------------</p>
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <p>Note: Please refresh the page to stop sorting.</p>
+        </div>
+
+        <div id="array_container">
+            
+        </div>
+
+        <div id="Info_Cont2">
+            <p>Time Complexities</p>
+            <br/><br/><br/><br/>
+            <p style="font-size: 12px;">Bubble Sort: O(n^2)</p><br/>
+            <p style="font-size: 12px;">Selection Sort: O(n^2)</p><br/>
+            <p style="font-size: 12px;">Insertion Sort: O(n^2)</p><br/>
+            <p style="font-size: 12px;">Merge Sort: O(n*log(n))</p><br/>
+            <p style="font-size: 12px;">Quick Sort: O(n*log(n))</p><br/>
+        </div>
+
+    </section>
+
+    <footer>
+
+    </footer>
+
+    <script src="./scripts/main.js"></script>   <!--This should be at the end of body and should be loaded before sorts.js-->
+    <script src="./scripts/visualizations.js"></script>  <!--This should be loaded after main.js-->
+
+    <script src="./scripts/bubble_sort.js"></script>
+    <script src="./scripts/selection_sort.js"></script>
+    <script src="./scripts/insertion_sort.js"></script>
+    <script src="./scripts/merge_sort.js"></script>
+    <script src="./scripts/quick_sort.js"></script>
+    <script src="./scripts/heap_sort.js"></script>
+</body>
+
+<!--
+    *****************
+    DONE BY:-   TUMMALA KETHAN
+    E-MAIL:-    tummala.kethan@gmail.com
+    *****************
+-->
+
+</html>
